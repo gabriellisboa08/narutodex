@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Cards from "./card";
+import { useEffect, useState } from "react";
+import data from "./api";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [characters, setCharacters] = useState([]);
+    
+
+    useEffect(async () => {
+        const req = await data();
+        setCharacters(req);
+    }, []);
+
+    console.log(characters);
+
+
+   
+
+    return (
+        <div className="App">
+            <div className="img--app">
+                <img src="https://wallpaperaccess.com/full/6620899.jpg"></img>
+            </div>
+
+            <h1>NARUTO PERSON</h1>
+            <div className="cardSection">
+                {characters.map((person, key) => (
+                    <Cards
+                        name={person.name}
+                        src={person.images[0]}
+                        description={person.about}
+                        key={key}
+                    />
+                ))}
+            </div>
+        </div>
+    );
 }
 
 export default App;
