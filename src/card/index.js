@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./card.css";
 
 const Cards = (props) => {
@@ -10,23 +10,25 @@ const Cards = (props) => {
 
     return (
         <div
-            className={clicked == true ? "card--clicked" : "card"}
+            className={clicked === true ? "card--clicked" : "card"}
             onClick={click}
         >
             <div
-                className={clicked == true ? "card--clicked--img" : "card--img"}
+                className={
+                    clicked === true ? "card--clicked--img" : "card--img"
+                }
             >
-                <img src={props.src}></img>
+                <img src={props.src} alt={props.alt}></img>
             </div>
 
             <div
                 className={
-                    clicked == true ? "card--clicked--description" : "description"
+                    clicked === true
+                        ? "card--clicked--description"
+                        : "description"
                 }
             >
-                <h2 >
-                    {props.name}
-                </h2>
+                <h2>{props.name}</h2>
                 <span>{props.description}</span>
             </div>
         </div>
