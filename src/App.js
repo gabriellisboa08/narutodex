@@ -11,7 +11,6 @@ function App() {
         setCharacters(req);
     }, []);
 
-
     return (
         <div className="App">
             <div className="img--app">
