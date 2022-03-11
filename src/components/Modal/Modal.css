@@ -1,0 +1,109 @@
+.container--modal {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 13, 13, 0.818);
+    left: 0;
+    top: 0;
+    z-index: 5;
+    animation: openModal 2s;
+}
+.container--container--modal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container--clickExit {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.container--items--modal{
+    width: fit-content;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container--carousel {
+    display: flex;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+.carousel--item {
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+}
+.carousel--item img {
+    height: 100%;
+    width: 300px;
+    border-radius: 20px;
+}
+.card--container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.container--description {
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #ccc;
+    margin-top: 50px;
+    max-height: 500px;
+    width: 500px;
+    opacity: 1;
+    flex-direction: column;
+    overflow: auto;
+}
+.container--modal h2 {
+    margin-top: 20px;
+    color: white;
+}
+
+.carousel {
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+}
+.arrowLeft,
+.arrowRight {
+    display: flex;
+    opacity: 0;
+    z-index: 1;
+    transition: all ease 0.2s;
+    align-items: center;
+    position: absolute;
+    color: white;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius: inherit;
+}
+.arrowRight {
+    border-radius: 20px 0px 0px 20px;
+    right: 0;
+    transform: rotateY(180deg);
+}
+.arrowLeft {
+    border-radius: 20px 0px 0px 20px;
+}
+.container--carousel:hover .arrowLeft,
+.container--carousel:hover .arrowRight {
+    cursor: pointer;
+    opacity: 0.5;
+}
+

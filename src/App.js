@@ -1,36 +1,11 @@
+import React from "react";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import Rotas from "./routes";
 import "./App.css";
-import Cards from "./card";
-import { useEffect, useState } from "react";
-import data from "./api";
-
-function App() {
-    const [characters, setCharacters] = useState([]);
-
-    useEffect(async () => {
-        const req = await data();
-        setCharacters(req);
-    }, []);
-
-    return (
-        <div className="App">
-            <div className="img--app">
-                <img src="https://wallpaperaccess.com/full/6620899.jpg"></img>
-            </div>
-            <h1>NARUTO PERSON</h1>
-            <div className="cardSection">
-                {characters.map((person, key) => (
-                    <Cards
-                        name={person.name}
-                        src={person.images[0]}
-                        description={person.about}
-                        alt={`foto_${person.name}`}
-                        key={key}
-                    />
-                ))}
-            </div>
-            )
-        </div>
-    );
-}
+const App = () => (
+    <div>
+        <Rotas />
+    </div>
+);
 
 export default App;
