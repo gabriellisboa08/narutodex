@@ -13,15 +13,15 @@
     width: 100vw;
     z-index: 0;
 }
-.backgroundImage--carousel--items{
+.backgroundImage--carousel--items {
     position: absolute;
     display: flex;
     flex-direction: row;
     height: auto;
     width: auto;
-    margin-left: -50vw;
+    
 }
-.backgroundImage--item{
+.backgroundImage--item {
     height: 100vh;
     width: 100vw;
     
@@ -45,3 +45,4 @@
     min-height: 100vh;
     padding: 40px;
 }
+
