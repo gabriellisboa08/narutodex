@@ -46,7 +46,7 @@ function CardsList() {
                     ))}
                 </div>
             </div>
-            <div className="container--app">
+            <div className="container--container--card">
                 <h1>NARUTO CHARACTERS</h1>
                 <div className="container--card">
                     {characters.map((person, key) => (
