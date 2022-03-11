@@ -11,6 +11,12 @@ function CardsList() {
     ]);
     const [indexImage, setIndexImage] = useState(0);
 
+    
+
+
+
+
+
     useEffect(async () => {
         const req = await data();
         setCharacters(req);
@@ -25,8 +31,13 @@ function CardsList() {
     return (
         <div className="container">
             <div className="container--backgroundImage">
-                <div className="backgroundImage--item">
-                    <img src={imagesBackGround[indexImage]}></img>
+                <div className="backgroundImage--carousel--items">
+                    <div className="backgroundImage--item">
+                        <img src={imagesBackGround[indexImage]}></img>
+                    </div>
+                    <div className="backgroundImage--item">
+                        <img src={imagesBackGround[1]}></img>
+                    </div>
                 </div>
             </div>
             <div className="container--app">

@@ -12,12 +12,19 @@
     height: 100vh;
     width: 100vw;
     z-index: 0;
+}
+.backgroundImage--carousel--items{
+    position: absolute;
     display: flex;
     flex-direction: row;
+    height: auto;
+    width: auto;
+    margin-left: -50vw;
 }
 .backgroundImage--item{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    
 }
 .backgroundImage--item img {
     height: 100%;
