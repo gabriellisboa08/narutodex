@@ -23,7 +23,7 @@
     width: 100%;
     cursor: pointer;
 }
-.container--items--modal{
+.container--items--modal {
     width: fit-content;
     z-index: 6;
     display: flex;
@@ -38,7 +38,6 @@
     overflow: hidden;
     position: relative;
     border-radius: 20px;
-    
 }
 .carousel--item {
     width: 300px;
@@ -110,12 +109,21 @@
 }
 
 @media screen and (max-width: 500px) {
-    .container--description{
+    .container--description {
         width: 400px;
     }
 }
 @media screen and (max-width: 400px) {
-    .container--description{
+    .container--description {
         width: 300px;
     }
+}
+.container--description::-webkit-scrollbar {
+    background: rgba(2, 2, 1, 0.13);
+    width: 10px; /* color of the tracking area */
+}
+.container--description::-webkit-scrollbar-thumb {
+    background-color: rgba(12, 5, 5, 0.589); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    /* creates padding around scroll thumb */
 }

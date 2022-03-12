@@ -69,7 +69,10 @@ const Modal = (props) => {
                         >
                             {images.map((imagem) => (
                                 <div key={imagem} className="carousel--item">
-                                    <img src={imagem}></img>
+                                    <img
+                                        src={imagem}
+                                        alt="Back Ground Image"
+                                    ></img>
                                 </div>
                             ))}
                         </div>
