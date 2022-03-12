@@ -49,6 +49,9 @@ function CardsList() {
 
     return (
         <div className="container">
+            <header style={{zIndex: 8}}>
+                oi
+            </header>
             <div className="container--backgroundImage">
                 <div
                     className="backgroundImage--carousel--items"
