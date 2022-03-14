@@ -2,6 +2,9 @@ import "./CardsList.css";
 import Card from "../Card";
 import { useEffect, useState } from "react";
 import data from "../../api";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 const backgroundImagesDesktop = [
     "https://wallpaperaccess.com/full/6620899.jpg",
@@ -49,9 +52,6 @@ function CardsList() {
 
     return (
         <div className="container">
-            <header style={{zIndex: 8}}>
-                oi
-            </header>
             <div className="container--backgroundImage">
                 <div
                     className="backgroundImage--carousel--items"
@@ -86,6 +86,34 @@ function CardsList() {
                     ))}
                 </div>
             </div>
+            <footer style={{ zIndex: 5 }}>
+                <div>
+                    <div>
+                        <a href="">
+                            <span>
+                                <InstagramIcon />
+                                GitHub
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <span>
+                                <InstagramIcon />
+                                LinkedIn
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <span>
+                                <InstagramIcon />
+                                Instagram
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </footer>
         </div>
     );
 }
