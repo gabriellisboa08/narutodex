@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+  font-family: 'naruto-font';
+  src: url('./components/fonts/njnaruto.ttf');
+}
 body::-webkit-scrollbar {
     width: 15px;
 
