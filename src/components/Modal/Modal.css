@@ -126,6 +126,10 @@
     .container--description {
         width: 400px;
     }
+    .arrowLeft,
+    .arrowRight {
+        opacity: 1;
+    }
 }
 @media screen and (max-width: 400px) {
     .arrowLeft,

@@ -15,7 +15,7 @@ const Footer = () => {
                         <h2>Credits</h2>
                         <ul>
                             <li>
-                                <p>Feito com amor por Gabriel Lisboa</p>
+                                <p>App desenvolvido por Gabriel Lisboa</p>
                             </li>
                             <li>
                                 <p>
@@ -28,7 +28,7 @@ const Footer = () => {
 
                     <div className="content--item">
                         <div className="content--item--title">
-                            <h2>Gabriel</h2>
+                            <h2>App Dev</h2>
                         </div>
                         <div className="contact--items">
                             <div className="contact--item">
@@ -71,7 +71,7 @@ const Footer = () => {
                     </div>
 
                     <div className="content--item">
-                        <h2>Gustavo</h2>
+                        <h2>API Dev</h2>
 
                         <div className="container--contact--items">
                             <div className="contact--item">
