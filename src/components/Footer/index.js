@@ -13,11 +13,17 @@ const Footer = () => {
                 <div className="footer--content--items">
                     <div className="content--item">
                         <h2>Credits</h2>
-                        <p>
-                            Feito com amor por Gabriel Lisboa
-                            <br /> Dados Retirados da API desenvolvida por
-                            Gustavo Nobreza
-                        </p>
+                        <ul>
+                            <li>
+                                <p>Feito com amor por Gabriel Lisboa</p>
+                            </li>
+                            <li>
+                                <p>
+                                    Dados Retirados da API desenvolvida por
+                                    Gustavo Nobreza
+                                </p>
+                            </li>
+                        </ul>
                     </div>
 
                     <div className="content--item">
@@ -26,7 +32,10 @@ const Footer = () => {
                         </div>
                         <div className="contact--items">
                             <div className="contact--item">
-                                <a href="#">
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/gabriellisboa08"
+                                >
                                     <span>
                                         <GitHubIcon />
                                     </span>
@@ -35,7 +44,10 @@ const Footer = () => {
                             </div>
 
                             <div className="contact--item">
-                                <a href="#">
+                                <a
+                                    target="_blank"
+                                    href="https://www.linkedin.com/in/gabriel-lisb%C3%B4a/"
+                                >
                                     <span>
                                         <LinkedInIcon />
                                     </span>
@@ -44,7 +56,10 @@ const Footer = () => {
                             </div>
 
                             <div className="contact--item">
-                                <a href="#">
+                                <a
+                                    target="_blank"
+                                    href="https://www.instagram.com/99lisboa/"
+                                >
                                     <span>
                                         <InstagramIcon />
                                     </span>
@@ -60,7 +75,10 @@ const Footer = () => {
 
                         <div className="container--contact--items">
                             <div className="contact--item">
-                                <a href="#">
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/gustavonobreza"
+                                >
                                     <span>
                                         <GitHubIcon />
                                     </span>
@@ -70,7 +88,10 @@ const Footer = () => {
                             </div>
 
                             <div className="contact--item">
-                                <a href="#">
+                                <a
+                                    target="_blank"
+                                    href="https://www.linkedin.com/in/gustavo-a-n-mesquita/"
+                                >
                                     <span>
                                         <LinkedInIcon />
                                     </span>
@@ -80,7 +101,10 @@ const Footer = () => {
                             </div>
 
                             <div className="contact--item">
-                                <a href="#">
+                                <a
+                                    target="_blank"
+                                    href="https://www.instagram.com/gustavonobreza/"
+                                >
                                     <span>
                                         <InstagramIcon />
                                     </span>
@@ -95,7 +119,8 @@ const Footer = () => {
                 <hr />
 
                 <div className="footer--copyright">
-                    <CopyrightIcon /><span>Gabriel developer</span>
+                    <CopyrightIcon />
+                    <span>Gabriel developer</span>
                 </div>
             </div>
         </footer>

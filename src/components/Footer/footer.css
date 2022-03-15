@@ -9,7 +9,6 @@ footer {
     font-family: "Roboto", sans-serif;
 }
 .footer--items {
-    font-family: inherit;
     display: flex;
     flex-direction: column;
 }
@@ -35,12 +34,16 @@ footer {
     color: white;
     padding: 4px;
 }
+.content--item p {
+    padding-right: 15px;
+}
 .content--item span {
     padding-left: 4px;
     text-align: center;
 
     /* align-items: flex-end; */
 }
+
 hr {
     margin: 10px;
 }
@@ -49,4 +52,24 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 565px) {
+    .content--item h2 {
+        margin-bottom: 20px;
+    }
+    footer {
+        font-size: 13px;
+    }
+}
+@media (max-width: 405px) {
+    .content--item h2 {
+        margin-bottom: 20px;
+    }
+    footer {
+        font-size: 10px;
+    }
+    .content--item p {
+        padding-right: 15px;
+    }
 }
