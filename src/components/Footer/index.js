@@ -20,7 +20,7 @@ const Footer = () => {
                             <li>
                                 <p>
                                     Dados Retirados da API desenvolvida por
-                                    Gustavo Nobreza
+                                    Gustavo A. N. Mesquita
                                 </p>
                             </li>
                         </ul>
