@@ -1,6 +1,6 @@
-const api = async () => {
+const api = async (page, limit) => {
     const req = await fetch(
-        "https://naruto-api.herokuapp.com/api/v1/characters?sort=true"
+        `https://narutodb.xyz/api/character?page=${page}&limit=${limit}`
     );
     const data = req.json()
     return data

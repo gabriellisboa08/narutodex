@@ -8,7 +8,6 @@ import zIndex from "@mui/material/styles/zIndex";
 const Modal = (props) => {
     const [images, setImages] = useState([]);
     const [scrollX, setScrollX] = useState(0);
-
     useEffect(() => {
         setImages(...props.images);
     }, [images]);
@@ -27,7 +26,6 @@ const Modal = (props) => {
         let x = scrollX - 300;
         if (x <= width) {
             x = width + 300;
-            console.log(x);
         }
         setScrollX(x);
     };
@@ -80,7 +78,7 @@ const Modal = (props) => {
 
                     <h2>{props.name}</h2>
                     <div className="container--description">
-                        <p>{props.description}</p>
+                        <p>{props.uniqueTraits[0]}</p>
                     </div>
                 </div>
             </div>

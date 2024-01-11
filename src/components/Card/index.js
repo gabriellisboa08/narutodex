@@ -4,7 +4,6 @@ import Modal from "../Modal";
 
 const Card = (props) => {
     const [select, setSelect] = useState(false);
-
     return (
         <>
             <div
@@ -24,7 +23,7 @@ const Card = (props) => {
             {select && (
                 <Modal
                     name={props.name}
-                    description={props.description}
+                    uniqueTraits={[props.uniqueTraits]}
                     images={[props.images]}
                     onClick={() => setSelect(false)}
                 />
