@@ -28,7 +28,6 @@ function CardsList() {
     const [scrollBackGround, setScrollBackGround] = useState(0);
 
     const handleFilterCharacter = (filteredCharacters, inputName) => {
-        console.log('handleFilterCharacter',filteredCharacters)
         setValueSearch(inputName)
         setfilteredCharacters(filteredCharacters);
       };

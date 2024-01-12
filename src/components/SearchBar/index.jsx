@@ -50,7 +50,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function SearchBar(props) {
-  console.log('props', props)
   const [value, setValue] = useState('');
  
   const handleChange = (event) => {

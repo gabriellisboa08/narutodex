@@ -1,7 +1,8 @@
-import React from "react";
 import CardsList from "../../components/CardsList";
+import Footer from "../../components/Footer";
 
-const MainPage = () => {
+
+const Vilages = () => {
     return (
         <div>
             <CardsList />
@@ -9,4 +10,4 @@ const MainPage = () => {
     );
 };
 
-export default MainPage;
+export default Vilages;

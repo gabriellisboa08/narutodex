@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 .container {
-    height: 100%;
     text-align: center;
 }
 .container--backgroundImage {
